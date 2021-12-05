@@ -1,0 +1,33 @@
+datadump.location:
+  author: C:\Users\Ruhul Amin\Desktop\code\betterreads\datadump\author.txt
+  works: C:\Users\Ruhul Amin\Desktop\code\betterreads\datadump\works.txt
+
+spring:
+  application:
+    name: betterreads-data-loader
+  data:
+    cassandra:
+      keyspace-name: main
+      username: awQdkQCMZaInGTGXkAulImLd
+      password: r.8F1d-idlnqNl7F+eSXaxSGuCYqQxyiQu8bEKmO0qie0tukCrSFYp4SX111+Mp6z3kBvtoBB+EzFfc4Qy_twLR3_k2_cMBky24XDbChrO6e-6tJI-w8U2XZFaGQvbfA
+      schema-action: create-if-not-exists
+      request:        timeout: 10s
+      connection:        connect-timeout: 10s
+        init-query-timeout: 10s  main:    allow-circular-references: true
+
+datastax.astra:
+  secure-connect-bundle: secure-connect-betterreads.zip
+
+astra.db:
+  id: <db-id>
+  region: northamerica-northeast1 
+  keyspace: main
+  application.token: <token>
+
+
+
+
+
+
+
+
